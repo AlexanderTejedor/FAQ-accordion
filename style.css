@@ -67,8 +67,8 @@ body p{
     padding: 2rem;
 }
 .card-content{
-    width: 375px;
-    top: 200px;
+    max-width: 375px;
+    top: 150px;
     padding: 2rem;
     position: absolute;
     background-color: var(--white);
@@ -125,4 +125,36 @@ body p{
 }
 .faq-question img {
     transition: opacity .2s ease;
+}
+/*========== Footer ==========*/
+.footer{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+}
+.footer p{
+    color: var(--dark-purple);
+}
+.footer a{
+    color: var(--grayish-purple);
+    text-decoration: none;
+}
+.footer a:hover{
+    color: var(--purple);
+}
+/*========== Responsive ==========*/
+
+/*========== Desktop ==========*/
+@media (min-width: 1440px){
+    .main-container .banner-img{
+        content: url('./assets/images/background-pattern-desktop.svg');
+        height: 340px;
+    }
+    .card-content{
+        max-width: 600px;
+    }
+
 }
